@@ -1,0 +1,47 @@
+@startuml
+ 
+' 棒人間を当てる場合はactorを使います
+actor アリス #ff00ff
+participant ボブ #00ffff
+
+participant ボブ2 #00ffff
+
+' デザイン定義
+' 共通する内容
+skinparam {
+    backgroundColor white
+    defaultFontName "Consolas,メイリオ"
+}
+' ⇑　defaultFontNameの使い方を間違えると日本語がおかしくなる
+' NG: defaultFontName Consolas,メイリオ
+ 
+' シーケンス図に関するデザイン定義
+skinparam sequence {
+    ' オブジェクト
+    ParticipantBorderColor black
+    ParticipantBackgroundColor white
+    PartitionFontSize 15
+    PartitionFontStyle bold
+
+    ArrowFontSize 25
+ 
+    ' 矢印
+    ArrowColor green
+ 
+    ' 棒人間
+    ActorBorderColor Yellow
+ 
+    ' ライフライン（縦棒）
+    LifeLineBorderColor red
+}
+ 
+' 作図コード
+アリス -> ボブ : hello
+アリス [#0000ff]-> ボブ : <color:red>テスト
+アリス -> ボブ : <color:red>テスト
+
+アリス -> ボブ2
+
+
+
+@enduml
