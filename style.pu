@@ -35,13 +35,13 @@ skinparam sequence {
     LifeLineBorderColor red
 }
  
+
 ' 作図コード
 アリス -> ボブ : hello
 アリス [#0000ff]-> ボブ : <color:red>テスト
 アリス -> ボブ : <color:red>テスト
 
-アリス -> ボブ2
-
+アリス -> ボブ2 : おはよう
 
 
 @enduml
