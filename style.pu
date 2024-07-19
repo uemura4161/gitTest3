@@ -45,4 +45,6 @@ skinparam sequence {
 
 ボブ2 -> アリス : おはようさん
 
+ボブ -> アリス : おはようございます。
+
 @enduml
